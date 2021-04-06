@@ -133,16 +133,15 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
   font-style: normal;
-
 }
 
 .content-wrapper {
@@ -171,6 +170,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
    
 .header-divider {
@@ -242,6 +249,10 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url("../img/unplugged-retreat.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -289,6 +300,9 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url("../img/unplugged-retreat-features.jpg");
+  background-size: cover;
+  background-position: center;  
 }
 
 .features h2 {
@@ -516,6 +530,11 @@ input[type=button] {
   }
 
   /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -551,7 +570,7 @@ input[type=button] {
   }
 
   .features .features-item-description {
-    width: 62%;
+    width: 60%;
   }
 
   /* Reviews */
@@ -679,7 +698,7 @@ input[type=button] {
   /* Hero Area */
   .hero-area h1 {
     font-size: 3.75em;
-    width: 60%;
+    width: 80%;
   }
 
   /* Aside */
